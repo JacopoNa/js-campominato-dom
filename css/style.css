@@ -45,7 +45,6 @@ main {
 #grid {
     height: 500px;
     width: 500px;
-    background-color: lightcoral;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -54,6 +53,31 @@ main {
 .square {
     background-color: lightseagreen;
     border: 1px solid black;
-    width: calc(100% / 8);
-    height: calc(100% / 8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+#grid.easy .square {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+#grid.medium .square {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+#grid.crazy .square {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
+.square.red {
+    background-color: red;
+}
+
+.square.lightblue {
+    background-color: lightblue;
+}
+
